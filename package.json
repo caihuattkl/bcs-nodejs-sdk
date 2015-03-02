@@ -1,9 +1,22 @@
 {
-  "name": "bcs-nodejs-tool",
-  "version": "0.0.0",
-  "private": true,
+  "name": "bcs-nodejs-sdk",
+  "version": "0.0.1",
+  "description": "bcs nodejs sdk"
+  "author": {
+    "name": "longmenwaideyu",
+    "email": "842450138@qq.com",
+    "url": "longmenwaideyu.com"
+  },
+  "main": "./bcs",
   "scripts": {
-    "start": "node bcs.js"
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "bcs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/longmenwaideyu/bcs-nodejs-sdk.git"
   },
   "dependencies": {
   }
