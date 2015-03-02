@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/webadmin/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/webadmin/.npm/bcs-sdk/0.0.1/package.tgz', '.' ]
+11 verbose tarball /home/webadmin/.npm/bcs-sdk/0.0.1/package.tgz
+12 verbose folder .
+13 info prepublish bcs-sdk@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/webadmin/.npm/1f1177db-tar.lock
+16 silly lockFile 6d2618d2-in-npm-bcs-sdk-0-0-1-package-tgz tar:///home/webadmin/.npm/bcs-sdk/0.0.1/package.tgz
+17 verbose lock tar:///home/webadmin/.npm/bcs-sdk/0.0.1/package.tgz /home/webadmin/.npm/6d2618d2-in-npm-bcs-sdk-0-0-1-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 6d2618d2-in-npm-bcs-sdk-0-0-1-package-tgz tar:///home/webadmin/.npm/bcs-sdk/0.0.1/package.tgz
+21 silly lockFile 6d2618d2-in-npm-bcs-sdk-0-0-1-package-tgz tar:///home/webadmin/.npm/bcs-sdk/0.0.1/package.tgz
+22 silly lockFile c3bdabee-badmin-npm-bcs-sdk-0-0-1-package /home/webadmin/.npm/bcs-sdk/0.0.1/package
+23 verbose lock /home/webadmin/.npm/bcs-sdk/0.0.1/package /home/webadmin/.npm/c3bdabee-badmin-npm-bcs-sdk-0-0-1-package.lock
+24 silly lockFile c3bdabee-badmin-npm-bcs-sdk-0-0-1-package /home/webadmin/.npm/bcs-sdk/0.0.1/package
+25 silly lockFile c3bdabee-badmin-npm-bcs-sdk-0-0-1-package /home/webadmin/.npm/bcs-sdk/0.0.1/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'bcs-sdk',
+28 silly publish   version: '0.0.1',
+28 silly publish   description: 'bcs nodejs sdk',
+28 silly publish   author:
+28 silly publish    { name: 'longmenwaideyu',
+28 silly publish      email: '842450138@qq.com',
+28 silly publish      url: 'longmenwaideyu.com' },
+28 silly publish   main: './bcs',
+28 silly publish   scripts: { test: 'node test/test.js' },
+28 silly publish   keywords: [ 'bcs' ],
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/longmenwaideyu/bcs-nodejs-sdk.git' },
+28 silly publish   dependencies: {},
+28 silly publish   readme: 'bcs-nodejs-sdk\n================\n##百度云存储的nodejs版sdk\n###使用方法\n    npm install bcs-nodejs-sdk\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'be5b7f4d4f4946f6d2436994f4acead0df893510',
+28 silly publish   bugs: { url: 'https://github.com/longmenwaideyu/bcs-nodejs-sdk/issues' },
+28 silly publish   homepage: 'https://github.com/longmenwaideyu/bcs-nodejs-sdk',
+28 silly publish   _id: 'bcs-sdk@0.0.1',
+28 silly publish   _shasum: 'be11983578a941242b89543976e51817ed67a1b0',
+28 silly publish   _from: '.' }
+29 verbose request where is /bcs-sdk
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 44d19d022c824dd8
+32 verbose url raw /bcs-sdk
+33 verbose url resolving [ 'https://registry.npmjs.org/', './bcs-sdk' ]
+34 verbose url resolved https://registry.npmjs.org/bcs-sdk
+35 verbose request where is https://registry.npmjs.org/bcs-sdk
+36 info trying registry request attempt 1 at 17:09:45
+37 http PUT https://registry.npmjs.org/bcs-sdk
+38 http 403 https://registry.npmjs.org/bcs-sdk
+39 verbose headers { date: 'Mon, 02 Mar 2015 09:09:46 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '1063',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-nrt6124-NRT',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1425287385.949222,VS0,VE393',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden user: longmenwaideyu not authorized to modify bcs-sdk
+41 error Changed: description "baidu cloud storage wrapper" -> "bcs nodejs sdk"
+41 error Changed: dist-tags.latest "1.0.2" -> "0.0.1"
+41 error Added: versions.0.0.1
+41 error Changed: readme "# BCS Storage SDK for Node.js \u000a" -> "bcs-nodejs-sdk\u000a================\u000a##百度云存储的nodejs版sdk\u000a###使用方法\u000a    npm install bcs-nodejs-sdk\u000a"
+41 error Changed: time.modified "2015-02-10T02:37:19.713Z" -> "2015-03-02T09:09:46.291Z"
+41 error Added: time.0.0.1
+41 error Changed: homepage "https://github.com/Luncher/BCS-Nodejs" -> "https://github.com/longmenwaideyu/bcs-nodejs-sdk"
+41 error Changed: repository.url "https://github.com/Luncher/BCS-Nodejs.git" -> "https://github.com/longmenwaideyu/bcs-nodejs-sdk.git"
+41 error Changed: author.name "luncher" -> "longmenwaideyu"
+41 error Added: author.email
+41 error Added: author.url
+41 error Changed: bugs.url "https://github.com/Luncher/BCS-Nodejs/issues" -> "https://github.com/longmenwaideyu/bcs-nodejs-sdk/issues"
+41 error Deleted: license
+41 error Added: _attachments: bcs-sdk
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Linux 3.2.0-65-generic-pae
+44 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error cwd /home/webadmin/bcs-nodejs-sdk
+46 error node -v v0.10.33
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
