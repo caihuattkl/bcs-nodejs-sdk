@@ -1,0 +1,10 @@
+{
+  "name": "bcs-nodejs-tool",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node bcs.js"
+  },
+  "dependencies": {
+  }
+}
