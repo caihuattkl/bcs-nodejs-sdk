@@ -2,10 +2,14 @@
 ========
 
 使用方法
-
-    var bcs = require('bcs');
-`       bcs.setKeys(accessKey, secrectKey);
+---------
+    var bcs = require('bcs-nodejs-sdk');
+    bcs.setKeys(accessKey, secrectKey);
     bcs.listObject(buckect, function (res) {
-
+		if (res.statusCode == 200) {
+			console.log('success');
+		}
+		console.log(res.headers);
+		console.log(res.data);
     });
-    //集体详见test/test.js
+    //其他使用详见test/test.js
